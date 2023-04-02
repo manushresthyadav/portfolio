@@ -1,5 +1,9 @@
 /* NAVBAR STYLES  */
 
+body{
+    font-family: 'Amatic SC', cursive;
+}
+
 .nav_container{
     /* height: 70px; */
     align-items: center;
@@ -60,7 +64,7 @@ cursor: pointer;
 }
 .home_icons{
     
-   cursor: pointer;
+   
     display: flex;
     margin-top: 40px;
     column-gap: 20px;
@@ -81,6 +85,8 @@ cursor: pointer;
     font-size: x-large;
     font-weight: 700;
 }
+
+
 
 /* HOME ANIMATION UNDERSTAND CODE */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -501,6 +507,8 @@ padding: 40px;
 }
 @media screen and (max-width:580px){
 
+   
+
 /* CONTACT  */
 .form{
     width: 90%;
@@ -559,6 +567,7 @@ padding: 40px;
 
 .nav_container{
     height: fit-content;
+    cursor: default;
 }
 
     }

@@ -32,7 +32,7 @@ export default function useHome(){
       <li><span>Trader</span></li>
     </ul>
   </div>
-
+M
 </div>
 <div className='home_content  mt-2 '>As a Frontend Developer I am resposible for creating the visual elements and user experience of websites and applications. Currently learning Nodejs,   Understanding how the backend works can help me create more efficient and effective frontend code, as well as give me a better understanding of how the application as a whole fits together.</div>
 
