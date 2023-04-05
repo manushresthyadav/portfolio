@@ -9,7 +9,7 @@ import gpt from "../assets/openai_banner.jpg"
 
 export default function project (){
 
-const data = [{img:star_banner,con:"Starbucks",demo:"https://manu-starbucks.vercel.app/",code:"https://github.com/manushresthyadav/StarbucksClone"},{img:gpt,con:"Gpt-3 OpenAI",demo:"http://gpt-3-ai-manu.vercel.app",code:"https://github.com/manushresthyadav/Gpt3-Clone"},{img:ecom,con:"E-Commerce",demo:"https://ecommerce-manu.vercel.app/",code:"https://github.com/manushresthyadav/Ecommerce-"},{img:filmpire,con:"Netflix Clone",demo:"https://filmpire-clone.vercel.app/",code:"https://github.com/manushresthyadav/Filmpire-Clone"},{img:todo,con:"Todo App",demo:"https://todo-app-manu.vercel.app/",code:"https://github.com/manushresthyadav/todo-app-"},]
+const data = [{img:star_banner,con:"Starbucks",demo:"https://manu-starbucks.vercel.app/",code:"https://github.com/manushresthyadav/StarbucksClone"},{img:gpt,con:"Gpt-3 OpenAI",demo:"http://gpt-3-ai-manu.vercel.app",code:"https://github.com/manushresthyadav/Gpt3-Clone"},{img:ecom,con:"E-Commerce",demo:"https://ecommerce-manu.vercel.app/",code:"https://github.com/manushresthyadav/Ecommerce-"},{img:filmpire,con:"Netflix Clone",demo:"https://filmpire-clone.vercel.app/",code:"https://github.com/manushresthyadav/Filmpire-Clone"},{img:todo,con:"Todo App",demo:"https://todo-app-manuu.onrender.com/",code:"https://github.com/manushresthyadav/todo-app-"},]
 
 const xx = data.map((elm)=>{
     return <div className="flex flex-col x mx-auto my-4">
