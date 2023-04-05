@@ -3,7 +3,7 @@ import "./styles.css"
 
 import star_banner from "../assets/starbucks_banner.jpg"
 import filmpire from "../assets/filmpire_banner.jpg"
-import todo from "../assets/todo.jpg"
+import todo from "../assets/updated_todo.jpg"
 import ecom from "../assets/ecom_banner.jpg"
 import gpt from "../assets/openai_banner.jpg"
 
