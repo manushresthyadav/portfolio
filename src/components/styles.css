@@ -74,6 +74,7 @@ cursor: pointer;
     /* padding: 30px; */
     display: flex;
     margin-top: 30px;
+
 }
 .resume_btn{
     padding: 10px 20px;
@@ -81,12 +82,18 @@ cursor: pointer;
     border: 2px solid #EB1D36;
     background-color: #EB1D36;
     margin-top: 40px;
-    color: white;
-    font-size: x-large;
+    color: #CFD2CF;
+    /* font-size: x-large; */
     font-weight: 700;
+    margin-top: 20px;
 }
-
-
+.contain__image{
+    align-items: center;
+    gap: 20px;
+}
+.supporting__image > img{
+    width: 100px
+}
 
 /* HOME ANIMATION UNDERSTAND CODE */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -166,11 +173,12 @@ cursor: pointer;
     background-color: #202327;
     color: #CFD2CF;
     min-height: calc(100vh - 70px);
+    max-height: 200vh;
     display: flex;
-   
+   margin-bottom: 40px;
 }
 .about_image{
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: right;
 }
@@ -186,7 +194,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     text-align: left;
-    row-gap: 20px;
+    /* row-gap: 20px; */
 }
 .hue{
     /* border: 2px solid white; */
@@ -207,6 +215,7 @@ color: black;
     background-color: #202327;
     color: #CFD2CF;
     min-height: calc(100vh - 70px);
+    max-height: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -223,11 +232,17 @@ color: black;
 }
 .skills_stack > *{
     margin: 20px auto;
-    border: 2px solid aliceblue;
+    /* border: 2px solid aliceblue; */
+    
 }
+.skills_stack > * > img {
+    border-radius: 50%;
+    width: 80px;
+}
+
 .skills_stack{
-    margin: 20px auto;
-    padding: 40px;
+    margin:  0px auto;
+    padding:  40px;
     
 display: flex;
 max-width: 60%;
@@ -385,7 +400,23 @@ padding: 40px;
     scale: 1.2;
     
 }
-
+.redclr{
+    color: #FA9494;
+    border-bottom: 1px solid #FA9494;
+    width: fit-content;
+}
+.about__main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: medium;
+    text-align: left;
+    /* max-width: 60%; */
+    margin: auto;
+}
+.about__main > *{
+    width: fit-content;
+}
 
 /* RESPONSIVE  */
 
@@ -410,18 +441,23 @@ padding: 40px;
 }
 
 @media screen and (max-width:1024px){
+    .about__main > * {
+        /* margin: auto; */
+    }
+
     .hue{
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        row-gap: 40px;
+        /* flex-direction: column-reverse; */
+        gap: 40px;
     }
     .about_content{
         width: 80%;
+        padding: 20px;
         text-align: center;
     }
-    .two{
-        margin: auto;
+    .contain__image{
+        justify-content: center;
     }
 
 /* SKILLS SECTION  */
@@ -487,6 +523,7 @@ padding: 40px;
 .three{
     margin-right: 1rem;
     column-gap: 1rem;
+    width: 100%;
 }
 .four{
     margin-left: 0.1rem;
@@ -501,14 +538,74 @@ padding: 40px;
     font-size: x-large;
 }
 .navbar_cross{
-    display: none;
     position: absolute;
-    top: 50px;
+    top: 30px;
+    right: 20px;
+    font-size: xx-large;
+    color: #202327;
 }
+.burger__container{
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #CFD2CF;
+    max-width: 50%;
+    width: 100%;
+    padding: 80px 20px;
+    overflow-y: scroll;
+    z-index: 99;
+}
+.three > a > *{
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #202327;
+    margin-bottom: 5px;
+    padding: 10px;
+    color: #202327;
+}
+
+/* HANDLE NAVBAR */
+
+.handle__navbar__list{
+    display: flex;
+    gap: 20px;
+}
+@media screen and (max-width:700px){
+    .nav_container{
+        font-size: medium;
+    }
+}
+.about_image> img{
+    margin: auto;
+}
+
+@media screen  and (max-width: 600px){
+.home_resume{
+    margin: 40px auto;
+}
+.hue{
+    flex-direction: column-reverse;
+}
+.about__main{
+    width: 60%;
+}
+.about__main > *{
+    margin: auto;
+    text-align: center;
+}
+}
+
+
 @media screen and (max-width:580px){
 
-   
-
+   .about__main{
+    width: 60%;
+   }
+.handle__navbar{
+    display: none;
+}
 /* CONTACT  */
 .form{
     width: 90%;
@@ -555,7 +652,7 @@ padding: 40px;
 /* NAVBAR */
 
 .three{
-    display: none;
+    /* display: none; */
     flex-direction: column;
 }
 
@@ -574,6 +671,9 @@ padding: 40px;
     
 
 @media screen and (max-width:430px){
+    .about__main{
+        width: 80%;
+    }
     .paddingcontrol{
         width: 100%;
     }

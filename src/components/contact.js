@@ -38,7 +38,7 @@ function handleSubmit(){
 
 return (
 <>
-<Navbar/>
+{/* <Navbar/> */}
     <div className="contact_container">
 <div className="flex gap-2 text-6xl font-bold contact_heading">Contact <div className="reddish">Me!</div></div>
 <div className="contact_form">

@@ -4,18 +4,41 @@ import Gif from "../assets/req.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faGithub , faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-
+import About from "./about";
+import Skills from "./skills";
+import Contact from "./contact";
+import Project from "./project";
 import Navbar from "../components/navbar"
-import { useState } from "react";
+import { useRef, useState,useref } from "react";
+import { useContext } from "react";
+// import { MyContext } from "./Context";
+
+import { createContext } from "react";
+
+export const MyContext = createContext();
+export const ContextProviderFunction = ({children})=>{
+
+    const home = useRef(null);
+    const about = useRef(null);
+    const skills = useRef(null);
+    const project = useRef(null);
+    const contact = useRef(null);
+
+    return (
+        <MyContext.Provider value={{home,about,skills,project,contact}}>{children}</MyContext.Provider>
+    )
+}
+
+
 
 export default function useHome(){
 
-    const [animate,changeAnimate]= useState("A FrontEnd Devloper ...")
-
+    const [animate,changeAnimate]= useState("A FrontEnd Devloper ...");
+    const {home,about,skills,project,contact} = useContext(MyContext);
     return (
         <>
         <Navbar/>
-<div className='home_container flex'>
+<div className='home_container flex' ref={home}>
 <div className='flex flex-col paddingcontrol'>
 
 
@@ -38,17 +61,14 @@ export default function useHome(){
 
 <div className="home_icons">
 
-<a href="https://www.secure.instagram.com/shresth_manuuu/"><FontAwesomeIcon icon={faInstagram} size="4x" style={{color: "#eb1d36",}} /></a>
-<a href="https://github.com/manushresthyadav"><FontAwesomeIcon icon={faGithub} size="4x" style={{color: "#eb1d36",}} /></a>
-<a href="https://twitter.com/ManushresthY"><FontAwesomeIcon icon={faTwitter} size="4x" style={{color: "#eb1d36",}} /></a>
-<a href="https://www.linkedin.com/in/manu-yadav-b44889208/"><FontAwesomeIcon icon={faLinkedinIn} size="4x" style={{color: "#eb1d36",}}/></a>
+<a href="https://www.secure.instagram.com/shresth_manuuu/"><FontAwesomeIcon icon={faInstagram} size="2x" style={{color: "inherit",}} /></a>
+<a href="https://github.com/manushresthyadav"><FontAwesomeIcon icon={faGithub} size="2x" style={{color: "#eb1d36",}} /></a>
+<a href="https://twitter.com/ManushresthY"><FontAwesomeIcon icon={faTwitter} size="2x" style={{color: "#eb1d36",}} /></a>
+<a href="https://www.linkedin.com/in/manu-yadav-b44889208/"><FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{color: "inherit",}}/></a>
 
 </div>
 
-<div className="home_resume">
-    <a href="https://drive.google.com/file/d/1fJJcptNJ3xljvnYV9oB0qnjd9LZJtNkz/view?usp=sharing"><btn className="resume_btn">Download Resume</btn></a>
 
-</div>
 
 </div>
 
@@ -56,6 +76,15 @@ export default function useHome(){
     <img src={Gif}></img>
 </div>
 </div>
+
+<div ref={about}><About/></div>
+<div ref={skills}><Skills/></div>
+
+<div ref={project}><Project/></div>
+<div ref={contact}><Contact/></div>
+
+
+
 </>
     );
 

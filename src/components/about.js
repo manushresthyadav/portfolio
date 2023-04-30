@@ -1,6 +1,6 @@
 import Navbar from "./navbar"
 import Me from "../assets/myimg.png"
-
+import Abt from "../assets/abt_me.png"
 import { useState } from "react"
 
 export default function useAbout(){
@@ -8,7 +8,7 @@ export default function useAbout(){
 const [Curr,changeCurr] = useState(false);
 
 return (<>
-<Navbar/>
+{/* <Navbar/> */}
     <div className="about_container">
 <div className="flex hue">
 
@@ -17,20 +17,25 @@ return (<>
 </div>
 
 <div className="about_content">
-    <div className="text-4xl flex gap-4 font-bold two">About <div className="reddish">Me</div></div>
-    <div className="text-2xl">Frontend Developer! </div>
-    <div>Hi there! My name is Manushresth Yadav and I am currently a 2nd year student studying Information Technology at MAIT. I am a driven and hard-working individual who is passionate about Developing. I am constantly seeking new challenges and opportunities to grow and develop my skills.
+   
+   
+   
+    <div className="about__main">
+    <div className=" flex contain__image"> <div className="text-3xl flex gap-4 font-bold two">About <div className="reddish">Me</div></div> <div className="supporting__image"><img src={Abt}></img></div> </div>
+<div>Manushresth</div>
+<div className="redclr">Full Stack Developer</div>
+<div>India, Gurgaon</div>
+<div>Age: 19</div>
+<div> Full Stack Devloper, experienced professionally in developing Web Applications. I have solved about 350+ problem in DSA and am proficient with C and C++ languages. </div>
 
-Outside of academics, I am involved in several extracurricular activities on campus, including CSI. These experiences have allowed me to meet new people and develop leadership and teamwork skills. In my free time, I enjoy Gaming and watching Anime, and I also enjoy exploring the local community and trying new things.
+    </div>
+    <div className="home_resume">
+    <a href="https://drive.google.com/file/d/1fJJcptNJ3xljvnYV9oB0qnjd9LZJtNkz/view?usp=sharing"><btn className="resume_btn">Download Resume</btn></a>
 
-After graduation, I hope to become a professional Developer. I am excited to see where my education and experiences will take me and am eager to contribute to the world in a meaningful way.</div>
+</div>
 
-{   Curr && <div className="about_knowmore">
-    No wonder you wanted to know more Stalker! Lmao Chill out. 
-    I have solved about 350+ problem in DSA and am proficient with C and C++ languages. I am trying to improve my Javascript constantly by making new projects with ReactJs and Firebase , learning Backend by starting with NodeJs so that i can fully know webDev and become a Full Stack Developer. 
-</div>}
 
-<div className="about_btn">
+{/* <div className="about_btn">
 
 {Curr &&  <button onClick={()=>{
     changeCurr((prev)=>{
@@ -44,7 +49,7 @@ After graduation, I hope to become a professional Developer. I am excited to see
 }}>Read More</button>}
      
   
-</div>
+</div> */}
 
 
 
