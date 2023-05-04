@@ -18,7 +18,8 @@ function handleClick(){
 
 
 }
-
+const lol='<>';
+const xd='</>';
 const scrollToSection = (elmnt) => {
   console.log(elmnt);
   // return;
@@ -37,9 +38,10 @@ changeDisplay(false);
 <>
 
 <div className='nav_container flex justify-between'>
-<div className='flex'>
+<div className='flex name_con'>
 
-<div className='four'>MANUSHRESTH</div>
+<div className="brand_new" > {lol} MANUSHRESTH {xd} </div>
+
 </div>
 
 <div className="handle__navbar">

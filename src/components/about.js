@@ -1,5 +1,5 @@
 import Navbar from "./navbar"
-import Me from "../assets/myimg.png"
+import Me from "../assets/mine3.webp"
 import Abt from "../assets/abt_me.png"
 import { useState } from "react"
 
