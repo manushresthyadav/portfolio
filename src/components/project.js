@@ -8,6 +8,7 @@ import ecom from "../assets/ecom_banner.jpg"
 import gpt from "../assets/openai_banner.jpg"
 import blog from "../assets/req_blog.png"
 import chat from "../assets/req_chat.png";
+import toy from "../assets/image_2023-08-01_203815523.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons"
@@ -25,7 +26,7 @@ content:'A blog website that allows users to create , update and delete their bl
 
 ,{img:ecom,con:"E-Commerce",demo:"https://ecommerce-manu.vercel.app/",code:"https://github.com/manushresthyadav/Ecommerce-",content: 'An E-commerce website made during the initial stages of my development journey. Made with the help of HTML CSS and JAVASCRIPT.'}
 
-,{img:filmpire,con:"Netflix Clone",demo:"https://toy-story-updated.vercel.app",code:"https://github.com/shresthyadav618/Toy-Story-updated", content: 'A Filmpire/Netflix based website that displays the details of movies as per categories. Made with React (Learnt calling Api from this Project)'}]
+,{img:toy,con:"Netflix Clone",demo:"https://toy-story-updated.vercel.app",code:"https://github.com/shresthyadav618/Toy-Story-updated", content: 'A Filmpire/Netflix based website that displays the details of movies as per categories. Made with React (Learnt calling Api from this Project)'}]
 
 const xx = data.map((elm)=>{
     return <div className="flex flex-col x mx-auto my-4">
