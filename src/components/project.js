@@ -25,7 +25,7 @@ content:'A blog website that allows users to create , update and delete their bl
 
 ,{img:ecom,con:"E-Commerce",demo:"https://ecommerce-manu.vercel.app/",code:"https://github.com/manushresthyadav/Ecommerce-",content: 'An E-commerce website made during the initial stages of my development journey. Made with the help of HTML CSS and JAVASCRIPT.'}
 
-,{img:filmpire,con:"Netflix Clone",demo:"https://filmpire-clone.vercel.app/",code:"https://github.com/manushresthyadav/Filmpire-Clone", content: 'A Filmpire/Netflix based website that displays the details of movies as per categories. Made with React (Learnt calling Api from this Project)'}]
+,{img:filmpire,con:"Netflix Clone",demo:"https://toy-story-updated.vercel.app",code:"https://github.com/shresthyadav618/Toy-Story-updated", content: 'A Filmpire/Netflix based website that displays the details of movies as per categories. Made with React (Learnt calling Api from this Project)'}]
 
 const xx = data.map((elm)=>{
     return <div className="flex flex-col x mx-auto my-4">
