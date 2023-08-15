@@ -30,7 +30,7 @@ return (<>
 
     </div>
     <div className="home_resume">
-    <a href="https://drive.google.com/file/d/1fJJcptNJ3xljvnYV9oB0qnjd9LZJtNkz/view?usp=sharing"><btn className="resume_btn">Download Resume</btn></a>
+    <a href="https://drive.google.com/file/d/1o8OiQSA1m1JkxUJjGSumKEUcbrLG2SR2/view"><btn className="resume_btn">Download Resume</btn></a>
 
 </div>
 
